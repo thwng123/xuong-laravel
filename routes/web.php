@@ -1,8 +1,11 @@
 <?php
 
 
+use App\Http\Controllers\Admin\CustomerController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\SupplierController;
 use App\Http\Controllers\HomeController;
+use App\Models\Supplier;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -50,4 +53,7 @@ Route::prefix('admin')
                 Route::delete('{id}/destroy',   [ProductController::class, 'destroy'])->name('destroy');
 
             });
+
+        Route::resource('suppliers', SupplierController::class);
+        Route::resource('customers', CustomerController::class);
     });

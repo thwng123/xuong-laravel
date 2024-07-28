@@ -39,6 +39,22 @@
                         <li><a href="{{route('admin.products.create')}}">Thêm mới</a></li>
                     </ul>
                 </li>
+                <li class="menu-item-has-children dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Nhà cung cấp</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><a href="{{route('admin.suppliers.index')}}">Danh sách</a></li>
+                        <li><a href="{{route('admin.suppliers.create')}}">Thêm mới</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"> <i class="menu-icon fa fa-th"></i>Khách hàng</a>
+                    <ul class="sub-menu children dropdown-menu">
+                        <li><a href="{{route('admin.customers.index')}}">Danh sách</a></li>
+                        <li><a href="{{route('admin.customers.create')}}">Thêm mới</a></li>
+                    </ul>
+                </li>
 
               
             </ul>
